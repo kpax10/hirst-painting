@@ -5,7 +5,6 @@ import random
 
 def place_dot():
     tim.pencolor(random.choice(color_list))
-    tim.hideturtle()
     tim.pendown()
     tim.dot(dot_size)
     tim.penup()
@@ -28,7 +27,9 @@ dot_space = 50
 
 turtle.colormode(255)
 tim = Turtle()
+tim.hideturtle()
 tim.penup()
+tim.speed('fastest')
 tim.setx(x_pos)
 tim.sety(y_pos)
 
